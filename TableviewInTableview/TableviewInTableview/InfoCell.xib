@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="87" id="KGk-i7-Jjw" customClass="InfoCell" customModule="TableviewInTableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user" translatesAutoresizingMaskIntoConstraints="NO" id="pB7-5y-Zzd">
+                        <rect key="frame" x="15" y="8" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="dTg-Eq-gGd"/>
+                            <constraint firstAttribute="width" secondItem="pB7-5y-Zzd" secondAttribute="height" multiplier="1:1" id="x7x-xc-Wlx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-oV-GuQ">
+                        <rect key="frame" x="53" y="8" width="244" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone" translatesAutoresizingMaskIntoConstraints="NO" id="1fY-KP-xc0">
+                        <rect key="frame" x="15" y="46" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="O5G-Nt-GIP"/>
+                            <constraint firstAttribute="width" secondItem="1fY-KP-xc0" secondAttribute="height" multiplier="1:1" id="TXP-Kx-917"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-XN-B3O">
+                        <rect key="frame" x="53" y="46" width="244" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx3-I9-wbu">
+                        <rect key="frame" x="15" y="79" width="282" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d8b-TC-HvR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1fY-KP-xc0" firstAttribute="trailing" secondItem="pB7-5y-Zzd" secondAttribute="trailing" id="34n-Hl-hwJ"/>
+                    <constraint firstItem="Tx3-I9-wbu" firstAttribute="top" secondItem="1fY-KP-xc0" secondAttribute="bottom" constant="3" id="5EB-e9-4pR"/>
+                    <constraint firstItem="Wxe-oV-GuQ" firstAttribute="top" secondItem="pB7-5y-Zzd" secondAttribute="top" id="6Hg-FG-zir"/>
+                    <constraint firstItem="1fY-KP-xc0" firstAttribute="top" secondItem="pB7-5y-Zzd" secondAttribute="bottom" constant="8" id="Dp9-0H-G2Z"/>
+                    <constraint firstItem="vd8-XN-B3O" firstAttribute="leading" secondItem="Wxe-oV-GuQ" secondAttribute="leading" id="DuB-Dz-CA5"/>
+                    <constraint firstItem="Wxe-oV-GuQ" firstAttribute="bottom" secondItem="pB7-5y-Zzd" secondAttribute="bottom" id="Ih8-lr-0Eu"/>
+                    <constraint firstItem="Tx3-I9-wbu" firstAttribute="leading" secondItem="1fY-KP-xc0" secondAttribute="leading" id="O2y-HN-GMf"/>
+                    <constraint firstItem="pB7-5y-Zzd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="UYC-UY-qcf"/>
+                    <constraint firstItem="vd8-XN-B3O" firstAttribute="trailing" secondItem="Wxe-oV-GuQ" secondAttribute="trailing" id="Ucx-Ty-yC4"/>
+                    <constraint firstItem="1fY-KP-xc0" firstAttribute="leading" secondItem="pB7-5y-Zzd" secondAttribute="leading" id="WJY-ye-Oy3"/>
+                    <constraint firstItem="pB7-5y-Zzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ad7-tC-3o6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Wxe-oV-GuQ" secondAttribute="trailing" constant="15" id="e2t-0B-WUp"/>
+                    <constraint firstItem="Wxe-oV-GuQ" firstAttribute="leading" secondItem="pB7-5y-Zzd" secondAttribute="trailing" constant="8" id="elJ-Th-uNT"/>
+                    <constraint firstItem="vd8-XN-B3O" firstAttribute="top" secondItem="1fY-KP-xc0" secondAttribute="top" id="fli-DS-enc"/>
+                    <constraint firstItem="Tx3-I9-wbu" firstAttribute="trailing" secondItem="vd8-XN-B3O" secondAttribute="trailing" id="gKY-28-Az8"/>
+                    <constraint firstItem="vd8-XN-B3O" firstAttribute="bottom" secondItem="1fY-KP-xc0" secondAttribute="bottom" id="l4h-2b-0Ik"/>
+                    <constraint firstItem="vd8-XN-B3O" firstAttribute="top" secondItem="Wxe-oV-GuQ" secondAttribute="bottom" constant="8" id="yRy-oO-Jjd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneNumber" destination="vd8-XN-B3O" id="6EX-9M-sQY"/>
+                <outlet property="userName" destination="Wxe-oV-GuQ" id="9Xk-Ug-RYL"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="25.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_phone" width="25" height="25"/>
+        <image name="ic_user" width="256" height="256"/>
+    </resources>
+</document>
